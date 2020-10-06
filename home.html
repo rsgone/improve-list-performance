@@ -1,0 +1,5 @@
+<li (click)="viewStudentDetail($event, 'student-item')">
+  <!-- student-item is a child web component -->
+  <!-- allStudents is an array of student objects -->
+  <student-item *ngFor="let student of allStudents;" [student]="student" id="{{student.id}}"></student-item>
+</li>
